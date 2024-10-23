@@ -20,13 +20,14 @@ function neutral_form_node_form_alter(&$form, FormStateInterface $form_state, $f
   $form['basic_info'] = [
     '#type' => 'details',
     '#title' => t('Basic info'),
-    '#weight' => -10,
     '#optional' => TRUE,
     '#open' => TRUE,
   ];
 
+  $form['title']['widget'][0]['value']['#title'] = t('Full name');
+
   // Move basic fields to details element.
-  $basic_fields = ['field_address', 'field_suffix', 'field_job_title', 'field_email', 'field_phone', 'field_fax', 'field_profile_image'];
+  $basic_fields = ['field_address', 'field_company', 'field_job_title', 'field_email', 'field_phone', 'field_fax', 'field_profile_image'];
   foreach ($basic_fields as $basic_field) {
     $form[$basic_field]['#group'] = 'basic_info';
   }

@@ -1,13 +1,20 @@
 {
-  "name": "platformsh/drupal10",
-  "description": "This template builds Drupal 10 for Platform.sh based the \"Drupal Recommended\" Composer project.",
+  "name": "ilr-web-services/scheinman-neutrals-web",
+  "description": "Composer-based Drupal 8 site for www.ilr.cornell.edu",
   "type": "project",
   "license": "GPL-2.0-or-later",
-  "homepage": "https://www.drupal.org/project/drupal",
-  "support": {
-    "docs": "https://www.drupal.org/docs/user_guide/en/index.html",
-    "chat": "https://www.drupal.org/node/314178"
-  },
+  "authors": [
+    {
+      "name": "Aaron Froelich",
+      "email": "aaronf@cornell.edu",
+      "role": "Developer"
+    },
+    {
+      "name": "Jeff Amaral",
+      "email": "jeff.amaral@cornell.edu",
+      "role": "Developer"
+    }
+  ],
   "repositories": [
     {
       "type": "composer",
@@ -16,11 +23,9 @@
   ],
   "require": {
     "composer/installers": "^2.0",
-    "drupal/core-composer-scaffold": "^10.0",
-    "drupal/core-project-message": "^10.0",
-    "drupal/core-recommended": "^10.0",
-    "drupal/redis": "^1.6",
-    "drush/drush": "^12",
+    "drupal/core-composer-scaffold": "^11.0",
+    "drupal/core-recommended": "^11.0",
+    "drush/drush": "^13",
     "platformsh/config-reader": "^2.4"
   },
   "conflict": {
@@ -72,27 +77,6 @@
       ],
       "web/themes/custom/{$name}": [
         "type:drupal-custom-theme"
-      ]
-    },
-    "drupal-core-project-message": {
-      "include-keys": [
-        "homepage",
-        "support"
-      ],
-      "post-create-project-cmd-message": [
-        "<bg=blue;fg=white>                                                         </>",
-        "<bg=blue;fg=white>  Congratulations, you\u2019ve installed the Drupal codebase  </>",
-        "<bg=blue;fg=white>  from the drupal/recommended-project template!          </>",
-        "<bg=blue;fg=white>                                                         </>",
-        "",
-        "<bg=yellow;fg=black>Next steps</>:",
-        "  * Install the site: https://www.drupal.org/docs/installing-drupal",
-        "  * Read the user guide: https://www.drupal.org/docs/user_guide/en/index.html",
-        "  * Get support: https://www.drupal.org/support",
-        "  * Get involved with the Drupal community:",
-        "      https://www.drupal.org/getting-involved",
-        "  * Remove the plugin that prints this message:",
-        "      composer remove drupal/core-project-message"
       ]
     }
   }

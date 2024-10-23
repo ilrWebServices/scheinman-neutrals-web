@@ -19,11 +19,13 @@ dependencies:
     - field.field.node.neutral.field_profile_image
     - field.field.node.neutral.field_references
     - field.field.node.neutral.field_websites
+    - image.style.thumbnail
     - node.type.neutral
   module:
     - address
     - image
     - link
+    - telephone
     - text
     - user
 id: node.neutral.default
@@ -33,110 +35,112 @@ mode: default
 content:
   body:
     type: text_default
-    label: hidden
+    label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 101
+    weight: 9
     region: content
   field_address:
     type: address_default
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 102
+    weight: 4
     region: content
   field_company:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 117
+    weight: 3
     region: content
   field_cornell_training:
-    type: basic_string
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 110
+    weight: 11
     region: content
   field_education:
-    type: basic_string
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 113
+    weight: 14
     region: content
   field_email:
     type: basic_string
-    label: above
+    label: hidden
     settings: {  }
     third_party_settings: {  }
-    weight: 103
+    weight: 5
     region: content
   field_experience:
-    type: basic_string
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 109
+    weight: 10
     region: content
   field_fax:
-    type: basic_string
-    label: above
-    settings: {  }
+    type: telephone_link
+    label: inline
+    settings:
+      title: ''
     third_party_settings: {  }
-    weight: 107
+    weight: 7
     region: content
   field_fee_policy:
-    type: basic_string
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 115
+    weight: 16
     region: content
   field_job_title:
     type: string
-    label: above
+    label: hidden
     settings:
       link_to_entity: false
     third_party_settings: {  }
-    weight: 105
+    weight: 2
     region: content
   field_other_training:
-    type: basic_string
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 111
+    weight: 12
     region: content
   field_phone:
-    type: basic_string
-    label: above
-    settings: {  }
+    type: telephone_link
+    label: hidden
+    settings:
+      title: ''
     third_party_settings: {  }
-    weight: 106
+    weight: 6
     region: content
   field_professional_associations:
-    type: basic_string
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
-    weight: 112
+    weight: 13
     region: content
   field_profile_image:
     type: image
-    label: above
+    label: hidden
     settings:
       image_link: ''
-      image_style: ''
+      image_style: thumbnail
       image_loading:
         attribute: lazy
     third_party_settings: {  }
-    weight: 116
+    weight: 1
     region: content
   field_references:
-    type: basic_string
+    type: text_default
     label: above
     settings: {  }
     third_party_settings: {  }
@@ -144,7 +148,7 @@ content:
     region: content
   field_websites:
     type: link
-    label: above
+    label: hidden
     settings:
       trim_length: 80
       url_only: false
@@ -152,11 +156,11 @@ content:
       rel: ''
       target: ''
     third_party_settings: {  }
-    weight: 108
+    weight: 8
     region: content
   links:
     settings: {  }
     third_party_settings: {  }
-    weight: 100
+    weight: 0
     region: content
 hidden: {  }

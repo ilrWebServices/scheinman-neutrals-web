@@ -11,7 +11,7 @@ id: node.neutral.field_address
 field_name: field_address
 entity_type: node
 bundle: neutral
-label: 'Basic info'
+label: Address
 description: ''
 required: true
 translatable: false
@@ -37,6 +37,14 @@ settings:
     US: US
   langcode_override: ''
   field_overrides:
+    givenName:
+      override: hidden
+    additionalName:
+      override: hidden
+    familyName:
+      override: hidden
+    organization:
+      override: hidden
     addressLine3:
       override: hidden
     sortingCode:

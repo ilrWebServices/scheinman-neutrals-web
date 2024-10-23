@@ -1,17 +1,17 @@
-uuid: 28525d20-0777-4c10-925d-709d2ee24124
+uuid: 8c7bcd03-f949-4613-beaa-53bd9e283fba
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.field_suffix
+    - field.storage.node.field_company
     - node.type.neutral
-id: node.neutral.field_suffix
-field_name: field_suffix
+id: node.neutral.field_company
+field_name: field_company
 entity_type: node
 bundle: neutral
-label: Suffix
+label: Company
 description: ''
-required: false
+required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''

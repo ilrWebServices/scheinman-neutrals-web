@@ -1,0 +1,19 @@
+uuid: fcc5fdf3-c900-41e3-9044-323f6588865f
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_fee_policy
+field_name: field_fee_policy
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

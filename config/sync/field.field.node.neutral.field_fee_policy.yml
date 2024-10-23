@@ -1,0 +1,19 @@
+uuid: 013ccdb7-0a31-4d93-a6d4-a2070c3c55f2
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fee_policy
+    - node.type.neutral
+id: node.neutral.field_fee_policy
+field_name: field_fee_policy
+entity_type: node
+bundle: neutral
+label: 'Fee policy'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

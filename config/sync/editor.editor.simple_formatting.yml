@@ -1,0 +1,33 @@
+uuid: c53c579f-34a4-41b6-9536-c9a73d74a871
+langcode: en
+status: true
+dependencies:
+  config:
+    - filter.format.simple_formatting
+  module:
+    - ckeditor5
+format: simple_formatting
+editor: ckeditor5
+settings:
+  toolbar:
+    items:
+      - heading
+      - bold
+      - italic
+      - bulletedList
+      - numberedList
+  plugins:
+    ckeditor5_heading:
+      enabled_headings:
+        - heading2
+        - heading3
+        - heading4
+        - heading5
+        - heading6
+    ckeditor5_list:
+      properties:
+        reversed: true
+        startIndex: true
+      multiBlock: true
+image_upload:
+  status: false

@@ -1,0 +1,19 @@
+uuid: aaa265d0-f677-4010-9ae2-835a5f3b0e6b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_references
+    - node.type.neutral
+id: node.neutral.field_references
+field_name: field_references
+entity_type: node
+bundle: neutral
+label: References
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

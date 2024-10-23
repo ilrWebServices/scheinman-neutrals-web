@@ -1,0 +1,188 @@
+uuid: abd23e0f-f8ee-44c0-ae98-3ec896b03635
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.neutral.body
+    - field.field.node.neutral.field_address
+    - field.field.node.neutral.field_cornell_training
+    - field.field.node.neutral.field_education
+    - field.field.node.neutral.field_email
+    - field.field.node.neutral.field_experience
+    - field.field.node.neutral.field_fax
+    - field.field.node.neutral.field_fee_policy
+    - field.field.node.neutral.field_job_title
+    - field.field.node.neutral.field_other_training
+    - field.field.node.neutral.field_phone
+    - field.field.node.neutral.field_professional_associations
+    - field.field.node.neutral.field_profile_image
+    - field.field.node.neutral.field_references
+    - field.field.node.neutral.field_suffix
+    - field.field.node.neutral.field_websites
+    - image.style.thumbnail
+    - node.type.neutral
+  module:
+    - address
+    - image
+    - link
+    - telephone
+    - text
+id: node.neutral.default
+targetEntityType: node
+bundle: neutral
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 6
+    region: content
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+      show_summary: false
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 16
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  field_address:
+    type: address_default
+    weight: 0
+    region: content
+    settings:
+      wrapper_type: container
+    third_party_settings: {  }
+  field_cornell_training:
+    type: text_textarea
+    weight: 8
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_education:
+    type: text_textarea
+    weight: 11
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_email:
+    type: email_default
+    weight: 3
+    region: content
+    settings:
+      placeholder: ''
+      size: 60
+    third_party_settings: {  }
+  field_experience:
+    type: text_textarea
+    weight: 7
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_fax:
+    type: telephone_default
+    weight: 5
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_fee_policy:
+    type: text_textarea
+    weight: 13
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_job_title:
+    type: string_textfield
+    weight: 2
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_other_training:
+    type: text_textarea
+    weight: 9
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_phone:
+    type: telephone_default
+    weight: 4
+    region: content
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+  field_professional_associations:
+    type: text_textarea
+    weight: 10
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_profile_image:
+    type: image_image
+    weight: 18
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_references:
+    type: text_textarea
+    weight: 12
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_suffix:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_websites:
+    type: link_default
+    weight: 14
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 17
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 15
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  promote: true
+  sticky: true
+  title: true

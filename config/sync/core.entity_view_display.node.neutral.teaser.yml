@@ -1,0 +1,60 @@
+uuid: d65e21ac-a0cc-4f6d-bb16-cd6bc64f9e43
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.neutral.body
+    - field.field.node.neutral.field_address
+    - field.field.node.neutral.field_cornell_training
+    - field.field.node.neutral.field_education
+    - field.field.node.neutral.field_email
+    - field.field.node.neutral.field_experience
+    - field.field.node.neutral.field_fax
+    - field.field.node.neutral.field_fee_policy
+    - field.field.node.neutral.field_job_title
+    - field.field.node.neutral.field_other_training
+    - field.field.node.neutral.field_phone
+    - field.field.node.neutral.field_professional_associations
+    - field.field.node.neutral.field_profile_image
+    - field.field.node.neutral.field_references
+    - field.field.node.neutral.field_suffix
+    - field.field.node.neutral.field_websites
+    - node.type.neutral
+  module:
+    - text
+    - user
+id: node.neutral.teaser
+targetEntityType: node
+bundle: neutral
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_address: true
+  field_cornell_training: true
+  field_education: true
+  field_email: true
+  field_experience: true
+  field_fax: true
+  field_fee_policy: true
+  field_job_title: true
+  field_other_training: true
+  field_phone: true
+  field_professional_associations: true
+  field_profile_image: true
+  field_references: true
+  field_suffix: true
+  field_websites: true

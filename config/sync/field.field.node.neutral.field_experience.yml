@@ -1,0 +1,19 @@
+uuid: fd1058c0-ee6c-4ef7-b510-300402727770
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_experience
+    - node.type.neutral
+id: node.neutral.field_experience
+field_name: field_experience
+entity_type: node
+bundle: neutral
+label: 'Dispute resolution experience'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

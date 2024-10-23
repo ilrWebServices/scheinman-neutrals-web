@@ -1,0 +1,19 @@
+uuid: 920a7cdf-36f6-4ae1-8ed2-58a179dfeec6
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_other_training
+field_name: field_other_training
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

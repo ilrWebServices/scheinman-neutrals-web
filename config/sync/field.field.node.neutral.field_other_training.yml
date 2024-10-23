@@ -1,0 +1,19 @@
+uuid: 9743e686-bf7e-415c-8a15-4a6c80806f60
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_other_training
+    - node.type.neutral
+id: node.neutral.field_other_training
+field_name: field_other_training
+entity_type: node
+bundle: neutral
+label: 'Other dispute resolution training'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -1,0 +1,19 @@
+uuid: 033d07a0-22a1-4c97-9bd8-f3ffc73dc1f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_education
+    - node.type.neutral
+id: node.neutral.field_education
+field_name: field_education
+entity_type: node
+bundle: neutral
+label: Education
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

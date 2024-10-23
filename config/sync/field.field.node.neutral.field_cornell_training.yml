@@ -1,0 +1,19 @@
+uuid: 39340d16-394d-4cad-96a2-4af1704899aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cornell_training
+    - node.type.neutral
+id: node.neutral.field_cornell_training
+field_name: field_cornell_training
+entity_type: node
+bundle: neutral
+label: 'Cornell University dispute resolution training'
+description: 'Course titles and dates taken.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

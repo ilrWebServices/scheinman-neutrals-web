@@ -1,0 +1,33 @@
+<?php
+
+/**
+ * @file
+ * Primary module hooks for Neutral module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+
+/**
+* Implements hook_form_alter().
+*/
+/**
+ * Implements hook_form_BASE_FORM_ID_alter().
+ */
+function neutral_form_node_form_alter(&$form, FormStateInterface $form_state, $form_id) {
+  // Add a new node add/edit form advance group section. This is generally shown
+  // in the right-hand column.
+  /** @see Drupal\node\NodeForm */
+  $form['basic_info'] = [
+    '#type' => 'details',
+    '#title' => t('Basic info'),
+    '#weight' => -10,
+    '#optional' => TRUE,
+    '#open' => TRUE,
+  ];
+
+  // Move basic fields to details element.
+  $basic_fields = ['field_address', 'field_suffix', 'field_job_title', 'field_email', 'field_phone', 'field_fax', 'field_profile_image'];
+  foreach ($basic_fields as $basic_field) {
+    $form[$basic_field]['#group'] = 'basic_info';
+  }
+}

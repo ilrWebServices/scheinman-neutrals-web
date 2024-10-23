@@ -51,6 +51,15 @@
         "web-root": "web/"
       }
     },
+    "composer-exit-on-patch-failure": true,
+    "patchLevel": {
+      "drupal/core": "-p2"
+    },
+    "patches": {
+      "commerceguys/addressing": {
+        "tba": "https://www.drupal.org/files/issues/2024-02-07/address-support-middlename-3020093.patch"
+      }
+    },
     "installer-paths": {
       "web/core": [
         "type:drupal-core"

@@ -27,7 +27,7 @@ $settings['state_cache'] = TRUE;
 // instead. In most cases it's best to leave this blank on Platform.sh. You
 // can configure a separate hash_salt in your settings.local.php file for
 // local development.
-// $settings['hash_salt'] = 'change_me';
+$settings['hash_salt'] = 'L927zoxLPI0jjOX4T9TD9kLYovWTgepw07zJFL2lbGjrfoHLhi7SF94dydr8o1AOlPOJn7LBvA';
 
 // Automatic Platform.sh settings.
 if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {

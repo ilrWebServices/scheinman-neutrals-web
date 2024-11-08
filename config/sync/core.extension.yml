@@ -21,6 +21,7 @@ module:
   node: 0
   page_cache: 0
   path_alias: 0
+  rest: 0
   serialization: 0
   system: 0
   telephone: 0

@@ -28,6 +28,7 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  views: 10
   minimal: 1000
 theme:
   claro: 0

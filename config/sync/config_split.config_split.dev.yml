@@ -1,0 +1,17 @@
+uuid: 3b32b8f3-6c9b-411e-92a7-c144a756926a
+langcode: en
+status: false
+dependencies: {  }
+id: dev
+label: Dev
+description: ''
+weight: 0
+stackable: false
+no_patching: false
+storage: folder
+folder: dev
+module:
+  views_ui: 0
+theme: {  }
+complete_list: {  }
+partial_list: {  }

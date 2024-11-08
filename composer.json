@@ -26,6 +26,7 @@
     "drupal/address": "^2.0",
     "drupal/core-composer-scaffold": "^11.0",
     "drupal/core-recommended": "^11.0",
+    "drupal/csv_serialization": "^4.0",
     "drush/drush": "^13",
     "platformsh/config-reader": "^2.4"
   },

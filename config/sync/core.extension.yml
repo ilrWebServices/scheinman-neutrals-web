@@ -21,6 +21,7 @@ module:
   path_alias: 0
   rest: 0
   serialization: 0
+  simple_sqlite_vacuum: 0
   sqlite: 0
   system: 0
   telephone: 0

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "6100129e946800b85ed43512317a8f75",
+    "content-hash": "1e7db9713645d80b02c8c3437969e75f",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1680,6 +1680,36 @@
                 "source": "https://github.com/drupal/core-recommended/tree/11.0.5"
             },
             "time": "2024-10-03T08:50:00+00:00"
+        },
+        {
+            "name": "drupal/simple_sqlite_vacuum",
+            "version": "1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/freethoughtdesign/simple_sqlite_vacuum.git",
+                "reference": "0cdac853527bf566dd7b0fe6ec52c54ed52061a5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/freethoughtdesign/simple_sqlite_vacuum/zipball/0cdac853527bf566dd7b0fe6ec52c54ed52061a5",
+                "reference": "0cdac853527bf566dd7b0fe6ec52c54ed52061a5",
+                "shasum": ""
+            },
+            "default-branch": true,
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "A simple module that vacuums sqlite database connections daily",
+            "homepage": "https://github.com/freethoughtdesign/sqlite_vacuum",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "https://github.com/freethoughtdesign/simple_sqlite_vacuum/tree/1.x",
+                "issues": "https://github.com/freethoughtdesign/simple_sqlite_vacuum/issues"
+            },
+            "time": "2024-11-16T20:18:24+00:00"
         },
         {
             "name": "drush/drush",
@@ -6506,7 +6536,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {},
+    "stability-flags": {
+        "drupal/simple_sqlite_vacuum": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {},

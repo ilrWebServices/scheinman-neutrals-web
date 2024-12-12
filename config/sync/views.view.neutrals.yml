@@ -124,18 +124,36 @@ display:
           exclude: false
           alter:
             alter_text: false
+            text: ''
             make_link: false
+            path: ''
             absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
             word_boundary: false
             ellipsis: false
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
             strip_tags: false
             trim: false
+            preserve_tags: ''
             html: false
           element_type: ''
           element_class: ''
           element_label_type: ''
           element_label_class: ''
-          element_label_colon: true
+          element_label_colon: false
           element_wrapper_type: ''
           element_wrapper_class: ''
           element_default_classes: true
@@ -146,7 +164,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -629,7 +647,7 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: basic_string
+          type: text_default
           settings: {  }
           group_column: value
           group_columns: {  }
@@ -1255,8 +1273,8 @@ display:
           type: link
           settings:
             trim_length: 80
-            url_only: false
-            url_plain: false
+            url_only: true
+            url_plain: true
             rel: '0'
             target: '0'
           group_column: ''
@@ -1267,7 +1285,7 @@ display:
           delta_reversed: false
           delta_first_last: false
           multi_type: separator
-          separator: ', '
+          separator: '|'
           field_api_classes: false
         field_profile_image:
           id: field_profile_image
@@ -1319,12 +1337,9 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: target_id
-          type: image
+          type: image_url
           settings:
-            image_link: ''
             image_style: ''
-            image_loading:
-              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true
@@ -1536,19 +1551,81 @@ display:
       style:
         type: serializer
         options:
-          uses_fields: false
           formats:
             csv: csv
       row:
         type: data_field
         options:
           field_options:
+            nid:
+              alias: id
+              raw_output: false
             title:
+              alias: ''
+              raw_output: false
+            field_address_address_line1:
+              alias: address_1
+              raw_output: false
+            field_address_address_line2:
+              alias: address_2
+              raw_output: false
+            field_address_administrative_area:
+              alias: state
+              raw_output: false
+            field_address_country_code:
+              alias: country
+              raw_output: false
+            field_address_locality:
+              alias: city
+              raw_output: false
+            field_address_postal_code:
+              alias: zip
+              raw_output: false
+            field_company:
+              alias: company
+              raw_output: false
+            field_cornell_training:
+              alias: cornell_training
+              raw_output: false
+            field_education:
+              alias: education
+              raw_output: false
+            field_email:
+              alias: email
+              raw_output: false
+            field_fax:
+              alias: fax
+              raw_output: false
+            field_fee_policy:
+              alias: fee_policy
+              raw_output: false
+            field_job_title:
+              alias: job_title
+              raw_output: false
+            field_other_training:
+              alias: other_training
+              raw_output: false
+            field_phone:
+              alias: phone
+              raw_output: false
+            field_professional_associations:
+              alias: professional_associations
+              raw_output: false
+            body:
+              alias: professional_work_history
+              raw_output: false
+            field_websites:
+              alias: websites
+              raw_output: false
+            field_profile_image:
+              alias: profile_image
+              raw_output: false
+            status:
               alias: ''
               raw_output: false
       display_description: ''
       display_extenders: {  }
-      path: neutrals
+      path: neutrals.csv
     cache_metadata:
       max-age: -1
       contexts:

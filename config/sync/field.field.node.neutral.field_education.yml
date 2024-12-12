@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_education
+    - filter.format.simple_formatting
     - node.type.neutral
+  module:
+    - text
 id: node.neutral.field_education
 field_name: field_education
 entity_type: node
@@ -15,5 +18,7 @@ required: true
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats:
+    - simple_formatting
 field_type: text_long

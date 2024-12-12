@@ -4,7 +4,10 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_professional_associations
+    - filter.format.simple_formatting
     - node.type.neutral
+  module:
+    - text
 id: node.neutral.field_professional_associations
 field_name: field_professional_associations
 entity_type: node
@@ -15,5 +18,7 @@ required: false
 translatable: false
 default_value: {  }
 default_value_callback: ''
-settings: {  }
+settings:
+  allowed_formats:
+    - simple_formatting
 field_type: text_long

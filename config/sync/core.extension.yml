@@ -6,7 +6,6 @@ module:
   breakpoint: 0
   ckeditor5: 0
   config_split: 0
-  csv_serialization: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0

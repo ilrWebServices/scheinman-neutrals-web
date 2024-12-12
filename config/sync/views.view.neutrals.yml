@@ -20,9 +20,9 @@ dependencies:
     - node.type.neutral
   module:
     - address
-    - csv_serialization
     - image
     - link
+    - neutral
     - node
     - rest
     - serialization

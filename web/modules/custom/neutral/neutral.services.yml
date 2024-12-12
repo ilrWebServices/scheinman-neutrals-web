@@ -1,0 +1,5 @@
+services:
+  serializer.encoder.csv:
+    class: Symfony\Component\Serializer\Encoder\CsvEncoder
+    tags:
+      - { name: encoder, priority: 20, format: 'csv' }

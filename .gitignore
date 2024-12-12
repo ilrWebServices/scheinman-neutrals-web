@@ -32,3 +32,6 @@ drush-backups
 .console
 /.editorconfig
 /.gitattributes
+
+# Ignore database
+data/*.sqlite*

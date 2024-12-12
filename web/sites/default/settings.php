@@ -1,7 +1,7 @@
 <?php
 /**
  * @file
- * Platform.sh example settings.php file for Drupal 10.
+ * Platform.sh example settings.php file for Drupal 11.
  */
 
 // Default Drupal settings.
@@ -10,7 +10,13 @@
 // default.settings.php file.
 //
 // See https://api.drupal.org/api/drupal/sites!default!default.settings.php/10
-$databases = [];
+$databases['default']['default'] = [
+  'database' => '../data/scheinman_neutrals.sqlite',
+  'driver' => 'sqlite',
+  'namespace' => 'Drupal\\Core\\Database\\Driver\\sqlite',
+  'prefix' => '',
+];
+
 $config_directories = [];
 $settings['update_free_access'] = FALSE;
 $settings['container_yamls'][] = $app_root . '/' . $site_path . '/services.yml';

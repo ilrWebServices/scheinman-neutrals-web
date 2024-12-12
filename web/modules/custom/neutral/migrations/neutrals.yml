@@ -1,0 +1,130 @@
+id: neutrals
+label: Scheinman Neutrals
+migration_group: default
+migration_tags:
+  - Custom
+source:
+  plugin: url
+  data_fetcher_plugin: http  # Unused: The `csv` parser fetches the data.
+  data_parser_plugin: csv
+  urls:
+    - https://raw.githubusercontent.com/ilrWebServices/scheinman-neutrals-data/refs/heads/main/neutrals.csv
+  fields:
+    -
+      name: id
+      selector: nid
+    -
+      name: name
+      selector: title
+    -
+      name: email
+      selector: email
+    -
+      name: job_title
+      selector: job_title
+    -
+      name: phone
+      selector: phone
+    -
+      name: fax
+      selector: fax
+    -
+      name: websites
+      selector: websites
+    -
+      name: prof_work_history
+      selector: prof_work_history
+    -
+      name: dispute_resolution_experience
+      selector: dispute_resolution_experience
+    -
+      name: dispute_resolution_training
+      selector: dispute_resolution_training
+    -
+      name: dispute_resolution_additional
+      selector: dispute_resolution_additional
+    -
+      name: professional_associations
+      selector: professional_associations
+    -
+      name: references
+      selector: references
+    -
+      name: fee_policy
+      selector: fee_policy
+    -
+      name: image_uri
+      selector: image_uri
+  ids:
+    id:
+      type: integer
+process:
+  uid:
+    plugin: default_value
+    default_value: 1
+  title: name
+  field_job_title: job_title
+  field_company:
+    plugin: default_value
+    default_value: 'missing from source'
+  field_phone: phone
+  field_fax: fax
+  field_email: email
+
+  field_address/country_code:
+    plugin: default_value
+    default_value: US
+  field_address/langcode:
+    plugin: default_value
+    default_value: en
+  # field_address/address_line1: tbd
+  # field_address/address_line2: tbd
+  # field_address/locality: tbd
+  # field_address/administrative_area: tbd
+  # field_address/postal_code: tbd
+
+  body/value: prof_work_history
+  body/format:
+    plugin: default_value
+    default_value: simple_formatting
+
+  field_cornell_training/value: dispute_resolution_training
+  field_cornell_training/format:
+    plugin: default_value
+    default_value: simple_formatting
+
+  field_experience/value: dispute_resolution_experience
+  field_experience/format:
+    plugin: default_value
+    default_value: simple_formatting
+
+  field_fee_policy/value: fee_policy
+  field_fee_policy/format:
+    plugin: default_value
+    default_value: simple_formatting
+
+  field_other_training/value: dispute_resolution_additional
+  field_other_training/format:
+    plugin: default_value
+    default_value: simple_formatting
+
+  field_professional_associations/value: professional_associations
+  field_professional_associations/format:
+    plugin: default_value
+    default_value: simple_formatting
+
+  field_references/value: references
+  field_references/format:
+    plugin: default_value
+    default_value: simple_formatting
+
+  # field_education/value: ????
+  # field_education/format:
+  #   plugin: default_value
+  #   default_value: simple_formatting
+destination:
+  plugin: entity:node
+  default_bundle: neutral
+migration_dependencies:
+  required: {  }
+  optional: {  }

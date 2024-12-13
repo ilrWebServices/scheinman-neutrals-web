@@ -27,6 +27,7 @@
   ],
   "require": {
     "composer/installers": "^2.0",
+    "cweagans/composer-patches": "^1.7",
     "drupal/address": "^2.0",
     "drupal/config_split": "^2.0",
     "drupal/core-composer-scaffold": "^11.0",
@@ -57,6 +58,11 @@
     "drupal-scaffold": {
       "locations": {
         "web-root": "web/"
+      }
+    },
+    "patches": {
+      "drupal/migrate_file": {
+        "Issue #3493921 by jeffam, a-fro: Sanitize migrated filenames using file settings": "https://git.drupalcode.org/project/migrate_file/-/commit/59b7109db9ca0db791b193e02fd3e7d41ddd3fbf.diff"
       }
     },
     "installer-paths": {

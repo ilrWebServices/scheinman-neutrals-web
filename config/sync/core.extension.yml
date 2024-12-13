@@ -16,6 +16,7 @@ module:
   image: 0
   link: 0
   migrate: 0
+  migrate_file: 0
   migrate_plus: 0
   neutral: 0
   node: 0

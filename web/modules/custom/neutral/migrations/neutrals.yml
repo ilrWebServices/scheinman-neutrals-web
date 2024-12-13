@@ -58,6 +58,8 @@ source:
   ids:
     id:
       type: integer
+  constants:
+    file_destination: 'public://neutrals/'
 process:
   uid:
     plugin: default_value
@@ -117,7 +119,20 @@ process:
   field_references/format:
     plugin: default_value
     default_value: simple_formatting
-
+  _source_full_path:
+    plugin: urlencode
+    source: image_uri
+  field_profile_image:
+    -
+      plugin: skip_on_empty
+      method: row
+      source: image_uri
+    -
+      plugin: image_import
+      source: '@_source_full_path'
+      destination: constants/file_destination
+      # uid: '@uid'
+      # skip_on_missing_source: true
   # field_education/value: ????
   # field_education/format:
   #   plugin: default_value

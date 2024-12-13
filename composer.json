@@ -31,6 +31,7 @@
     "drupal/config_split": "^2.0",
     "drupal/core-composer-scaffold": "^11.0",
     "drupal/core-recommended": "^11.0",
+    "drupal/migrate_file": "^3.0@alpha",
     "drupal/migrate_plus": "^6.0",
     "drupal/simple_sqlite_vacuum": "1.x-dev",
     "drush/drush": "^13",

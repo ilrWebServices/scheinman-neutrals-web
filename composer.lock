@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "5762806ee7c327a602f16ba7ea3ee9cf",
+    "content-hash": "08f833235a0308470968c63345bb0927",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1680,6 +1680,54 @@
                 "source": "https://github.com/drupal/core-recommended/tree/11.0.5"
             },
             "time": "2024-10-03T08:50:00+00:00"
+        },
+        {
+            "name": "drupal/migrate_file",
+            "version": "3.0.0-alpha1",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/migrate_file.git",
+                "reference": "3.0.0-alpha1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/migrate_file-3.0.0-alpha1.zip",
+                "reference": "3.0.0-alpha1",
+                "shasum": "61bd8124151ada8abdd10ae5c7cbc346ee6247b5"
+            },
+            "require": {
+                "drupal/core": "^10.3 | ^11"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "drupal": {
+                    "version": "3.0.0-alpha1",
+                    "datestamp": "1732319730",
+                    "security-coverage": {
+                        "status": "not-covered",
+                        "message": "Alpha releases are not covered by Drupal security advisories."
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/8/downloads",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "drclaw",
+                    "homepage": "https://www.drupal.org/user/823702"
+                }
+            ],
+            "description": "Additional support for migrating files including downloading remote files and using remote uris (without download)",
+            "homepage": "https://www.drupal.org/project/migrate_file",
+            "keywords": [
+                "Drupal"
+            ],
+            "support": {
+                "source": "http://cgit.drupalcode.org/migrate_file",
+                "issues": "https://www.drupal.org/project/issues/migrate_file"
+            }
         },
         {
             "name": "drupal/migrate_plus",
@@ -6602,11 +6650,12 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
+        "drupal/migrate_file": 15,
         "drupal/simple_sqlite_vacuum": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,
-    "platform": {},
-    "platform-dev": {},
+    "platform": [],
+    "platform-dev": [],
     "plugin-api-version": "2.6.0"
 }

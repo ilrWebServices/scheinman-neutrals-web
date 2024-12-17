@@ -139,7 +139,7 @@ process:
     -
       plugin: image_import
       destination: constants/file_destination
-      alt: '!name'
+      alt: name
       # uid: '@uid'
 destination:
   plugin: entity:node

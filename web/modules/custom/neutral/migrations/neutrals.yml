@@ -171,6 +171,18 @@ process:
       destination: constants/file_destination
       alt: name
       # uid: '@uid'
+  field_websites:
+    -
+      plugin: callback
+      callable: trim
+      source: websites
+    -
+      plugin: skip_on_empty
+      method: process
+      message: 'Record does not contain websites.'
+    -
+      plugin: explode
+      delimiter: ';'
 destination:
   plugin: entity:node
   default_bundle: neutral

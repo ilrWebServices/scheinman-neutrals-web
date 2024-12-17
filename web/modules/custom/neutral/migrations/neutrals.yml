@@ -66,9 +66,7 @@ process:
     default_value: 1
   title: name
   field_job_title: job_title
-  field_company:
-    plugin: default_value
-    default_value: 'missing from source'
+  field_company: company
   field_phone: phone
   field_fax: fax
   field_email: email
@@ -79,11 +77,16 @@ process:
   field_address/langcode:
     plugin: default_value
     default_value: en
-  # field_address/address_line1: tbd
-  # field_address/address_line2: tbd
-  # field_address/locality: tbd
-  # field_address/administrative_area: tbd
-  # field_address/postal_code: tbd
+  field_address/address_line1: addr_1
+  field_address/address_line2: addr_2
+  field_address/locality: city
+  field_address/administrative_area: state
+  field_address/postal_code: zip
+  field_address/given_name: fname
+  field_address/family_name: lname
+  field_address/additional_name: mname
+  # field_address/???: name_title
+  # field_address/???: name_suffix
 
   body/value: prof_work_history
   body/format:

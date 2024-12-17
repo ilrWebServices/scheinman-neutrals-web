@@ -23,6 +23,30 @@ source:
       name: email
       selector: email
     -
+      name: addr_1
+      selector: addr_1
+    -
+      name: addr_2
+      selector: addr_2
+    -
+      name: city
+      selector: city
+    -
+      name: state
+      selector: state
+    -
+      name: zip
+      selector: zip
+    -
+      name: fname
+      selector: fname
+    -
+      name: lname
+      selector: lname
+    -
+      name: mname
+      selector: mname
+    -
       name: job_title
       selector: job_title
     -
@@ -31,6 +55,9 @@ source:
     -
       name: fax
       selector: fax
+    -
+      name: company
+      selector: company
     -
       name: websites
       selector: websites

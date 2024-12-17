@@ -80,6 +80,9 @@ source:
       name: references
       selector: references
     -
+      name: education
+      selector: education
+    -
       name: fee_policy
       selector: fee_policy
     -
@@ -153,10 +156,10 @@ process:
   field_references/format:
     plugin: default_value
     default_value: simple_formatting
-  # field_education/value: ????
-  # field_education/format:
-  #   plugin: default_value
-  #   default_value: simple_formatting
+  field_education/value: education
+  field_education/format:
+    plugin: default_value
+    default_value: simple_formatting
 
   field_profile_image:
     -

@@ -14,6 +14,9 @@ source:
       name: id
       selector: nid
     -
+      name: uid
+      selector: uid
+    -
       name: name
       selector: title
     -
@@ -62,8 +65,9 @@ source:
     file_destination: 'public://neutrals/'
 process:
   uid:
-    plugin: default_value
-    default_value: 1
+    plugin: migration_lookup
+    migration: neutrals_accounts
+    source: uid
   title: name
   field_job_title: job_title
   field_company: company
@@ -141,5 +145,6 @@ destination:
   plugin: entity:node
   default_bundle: neutral
 migration_dependencies:
-  required: {  }
+  required:
+    - neutrals_accounts
   optional: {  }

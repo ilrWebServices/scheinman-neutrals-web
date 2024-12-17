@@ -1,0 +1,64 @@
+id: neutrals_accounts
+label: Scheinman Neutrals User Accounts
+migration_group: default
+migration_tags:
+  - Custom
+source:
+  plugin: url
+  data_fetcher_plugin: http  # Unused: The `csv` parser fetches the data.
+  data_parser_plugin: csv
+  urls:
+    - https://raw.githubusercontent.com/ilrWebServices/scheinman-neutrals-data/refs/heads/main/neutrals_users.csv
+  fields:
+    -
+      name: uid
+      selector: uid
+    -
+      name: name
+      selector: name
+    -
+      name: pass
+      selector: pass
+    -
+      name: mail
+      selector: mail
+    -
+      name: created
+      selector: created
+    -
+      name: access
+      selector: access
+    -
+      name: login
+      selector: login
+    -
+      name: timezone
+      selector: timezone
+    -
+      name: init
+      selector: init
+    -
+      name: changed
+      selector: changed
+  ids:
+    uid:
+      type: integer
+process:
+  name: name
+  pass: pass
+  mail: mail
+  created: created
+  access: access
+  login: login
+  timezone: timezone
+  init: init
+  changed: changed
+  status:
+    plugin: default_value
+    default_value: 1
+destination:
+  plugin: entity:user
+  default_bundle: user
+migration_dependencies:
+  required: {  }
+  optional: {  }

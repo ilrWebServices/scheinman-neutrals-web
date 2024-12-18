@@ -1,0 +1,18 @@
+uuid: 8299b95f-d433-4534-8dbf-8248403252c1
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.neutral
+id: node.neutral.title
+field_name: title
+entity_type: node
+bundle: neutral
+label: 'Full name'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

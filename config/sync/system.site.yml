@@ -2,8 +2,8 @@ _core:
   default_config_hash: HlN7eAN2N4JIHsYv56V4E7sqC9bS609KwvGFjyD_mgk
 langcode: en
 uuid: 065a5bf8-348c-4d15-a62b-fe6ec8a39bd2
-name: 'Drush Site-Install'
-mail: admin@example.com
+name: 'Scheinman Neutrals Administration'
+mail: web@ilr.mail.cornell.edu
 slogan: ''
 page:
   403: ''
@@ -12,4 +12,4 @@ page:
 admin_compact_mode: false
 weight_select_max: 100
 default_langcode: en
-mail_notification: null
+mail_notification: ''

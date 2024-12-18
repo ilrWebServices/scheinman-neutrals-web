@@ -1,0 +1,14 @@
+uuid: e16ee5a7-c21e-4ef2-bdec-08f214488aa3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.neutral_admin
+  module:
+    - user
+id: user_remove_role_action.neutral_admin
+label: 'Remove the neutral admin role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: neutral_admin

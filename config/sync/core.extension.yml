@@ -5,6 +5,7 @@ module:
   block: 0
   breakpoint: 0
   ckeditor5: 0
+  condition_path: 0
   config_split: 0
   dblog: 0
   dynamic_page_cache: 0

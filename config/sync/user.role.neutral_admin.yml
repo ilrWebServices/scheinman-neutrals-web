@@ -11,6 +11,7 @@ label: 'neutral admin'
 weight: 2
 is_admin: null
 permissions:
+  - 'access content overview'
   - 'administer nodes'
   - 'delete any neutral content'
   - 'edit any neutral content'

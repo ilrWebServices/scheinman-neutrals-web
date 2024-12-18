@@ -19,7 +19,6 @@ is_admin: false
 permissions:
   - 'access administration pages'
   - 'access content'
-  - 'access content overview'
   - 'access toolbar'
   - 'create neutral content'
   - 'edit own neutral content'

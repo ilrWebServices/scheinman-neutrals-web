@@ -1,0 +1,18 @@
+uuid: c72615d1-ad81-4dbb-b6b3-3ba6dd6bd44d
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.neutral
+  module:
+    - node
+id: neutral_admin
+label: 'neutral admin'
+weight: 2
+is_admin: null
+permissions:
+  - 'administer nodes'
+  - 'delete any neutral content'
+  - 'edit any neutral content'
+  - 'revert neutral revisions'
+  - 'view neutral revisions'

@@ -40,5 +40,8 @@ $config['system.mail']['mailer_dsn'] = [
   'user' => '',
   'password' => '',
 ];
+
+// Enable the config split for development-only modules, like field_ui.
+$config['config_split.config_split.dev']['status'] = TRUE;
 ```
 

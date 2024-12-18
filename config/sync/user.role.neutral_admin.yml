@@ -6,8 +6,9 @@ dependencies:
     - node.type.neutral
   module:
     - node
+    - view_unpublished
 id: neutral_admin
-label: 'neutral admin'
+label: 'Neutral admin'
 weight: 2
 is_admin: null
 permissions:
@@ -16,4 +17,5 @@ permissions:
   - 'delete any neutral content'
   - 'edit any neutral content'
   - 'revert neutral revisions'
+  - 'view any unpublished neutral content'
   - 'view neutral revisions'

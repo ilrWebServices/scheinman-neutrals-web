@@ -40,5 +40,19 @@ $databases['default']['default'] = [
   'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
   'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
 ];
+
+// Force the use of SMTP for local development.
+$config['system.mail']['interface'] = [
+  'default' => 'symfony_mailer',
+];
+
+// These are the settings for Mailpit/Mailhog.
+$config['system.mail']['mailer_dsn'] = [
+  'scheme' => 'smtp',
+  'host' => 'localhost',
+  'port' => 1025,
+  'user' => '',
+  'password' => '',
+];
 ```
 

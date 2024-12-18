@@ -27,20 +27,6 @@ For local development, add something like the following to `web/sites/default/se
 ```
 <?php
 
-$databases['default']['default'] = [
-  'database' => 'YOUR_DATABASE_NAME',
-  'username' => 'YOUR_USER_NAME',
-  'password' => '',
-  'prefix' => '',
-  'collation' => 'utf8mb4_general_ci',
-  'host' => 'localhost',
-  'port' => '3306',
-  'isolation_level' => 'READ COMMITTED',
-  'driver' => 'mysql',
-  'namespace' => 'Drupal\\mysql\\Driver\\Database\\mysql',
-  'autoload' => 'core/modules/mysql/src/Driver/Database/mysql/',
-];
-
 // Force the use of SMTP for local development.
 $config['system.mail']['interface'] = [
   'default' => 'symfony_mailer',

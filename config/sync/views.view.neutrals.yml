@@ -1650,6 +1650,9 @@ display:
             field_cornell_training:
               alias: cornell_training
               raw_output: false
+            field_experience:
+              alias: experience
+              raw_output: false
             field_education:
               alias: education
               raw_output: false

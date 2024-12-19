@@ -93,6 +93,8 @@ source:
       type: integer
   constants:
     file_destination: 'public://neutrals/'
+    url_regex: '|^(?!https?://)(.+)|'
+    url_replacement: 'http://$1'
 process:
   uid:
     plugin: migration_lookup
@@ -183,6 +185,14 @@ process:
     -
       plugin: explode
       delimiter: ';'
+    -
+      plugin: callback
+      callable: preg_replace
+      unpack_source: true
+      source:
+        - constants/url_regex
+        - constants/url_replacement
+        - # This is required to pass the value from the previous process plugin.
   status:
     plugin: default_value
     default_value: 1

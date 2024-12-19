@@ -27,10 +27,10 @@ default_value:
     address_line1: ''
     address_line2: ''
     address_line3: null
-    organization: ''
-    given_name: ''
+    organization: null
+    given_name: null
     additional_name: null
-    family_name: ''
+    family_name: null
 default_value_callback: ''
 settings:
   available_countries:
@@ -42,7 +42,7 @@ settings:
     additionalName:
       override: hidden
     familyName:
-      override: hidden
+      override: required
     organization:
       override: hidden
     addressLine3:

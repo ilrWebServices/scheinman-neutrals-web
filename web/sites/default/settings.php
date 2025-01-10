@@ -251,6 +251,14 @@ $databases['default']['default'] = [
  */
 
 /**
+ * Temporarily necessary to reduce the sqlite version requirement in D11.
+ *
+ * @see https://www.drupal.org/project/drupal/issues/3346338
+ * @see https://www.drupal.org/project/sqlite337
+ */
+require DRUPAL_ROOT . '/modules/contrib/sqlite337/settings.inc';
+
+/**
  * Location of the site configuration files.
  *
  * The $settings['config_sync_directory'] specifies the location of file system

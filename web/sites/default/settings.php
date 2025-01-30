@@ -905,3 +905,10 @@ if (getenv('SMTP_HOST')) {
 if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
   include $app_root . '/' . $site_path . '/settings.local.php';
 }
+
+/**
+ * Ignored config name regex patterns.
+ */
+$settings['config_ignore_patterns'] = [
+  '/^block\.block\.custom[a-z_]+$/',
+];

@@ -1,0 +1,8 @@
+uuid: 3d65e0c3-1dcd-4e61-b52f-d5bd1944338f
+langcode: en
+status: true
+dependencies: {  }
+id: simple_text
+label: 'Simple text'
+revision: false
+description: 'Use <em>Simple Text</em> blocks for text with limited formatting.'

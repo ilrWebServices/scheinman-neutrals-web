@@ -16,6 +16,7 @@ permissions:
   - 'administer nodes'
   - 'delete any neutral content'
   - 'edit any neutral content'
+  - 'rebuild node access permissions'
   - 'revert neutral revisions'
   - 'view any unpublished neutral content'
   - 'view neutral revisions'
